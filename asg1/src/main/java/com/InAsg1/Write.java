@@ -25,9 +25,9 @@ public class Write {
             for (Info data : findAll()) {
                 Row row = sheet.createRow(r++);
                 Cell col1 = row.createCell(0);
-                col1.setCellValue(data.getTd());
+                col1.setCellValue(data.getTh());
                 Cell col2 = row.createCell(1);
-                col2.setCellValue(data.getTh());
+                col2.setCellValue(data.getTd());
             }
             // Adjust Size of Cells
             for (int i = 0; i < 24; i++) {
